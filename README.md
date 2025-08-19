@@ -1,6 +1,6 @@
 # Simviator Microservices
 
-Professional flight simulation enhancement system built as microservices. Provides real-time aviation commentary, character-driven guidance, and multi-platform bot integration for X-Plane, MSFS, and other flight simulators.
+Flight simulation enhancement system built as microservices. Provides real-time aviation commentary, character-driven guidance, and multi-platform bot integration for X-Plane, MSFS, and other flight simulators.
 
 ## 🎯 What It Does
 
