@@ -1,6 +1,6 @@
 # Simviator Microservices
 
-Flight simulation enhancement system built as microservices. Provides real-time aviation commentary, character-driven guidance, and multi-platform bot integration for X-Plane, MSFS, and other flight simulators.
+Professional flight simulation enhancement system built as microservices. Provides real-time aviation commentary, character-driven guidance, and multi-platform bot integration for X-Plane, MSFS, and other flight simulators.
 
 ## 🎯 What It Does
 
@@ -34,7 +34,7 @@ Simviator transforms flight simulation from a solo technical exercise into an im
 
 ### 1. Clone and Setup
 ```bash
-git clone https://github.com/yourusername/simviator-microservices.git
+git clone https://github.com/c42meitheal-collab/simviator-microservices.git
 cd simviator-microservices
 pip install -r requirements.txt
 ```
@@ -86,7 +86,7 @@ Services will simulate a Dublin → London flight with professional aviation com
 2. Configure MSFS interface
 3. Professional aviation guidance for real flights
 
-See [INTEGRATION.md](docs/INTEGRATION.md) for detailed setup instructions.
+See [INTEGRATION.md](INTEGRATION.md) for detailed setup instructions.
 
 ## 🎭 Characters
 
@@ -238,23 +238,33 @@ python services/simviator/main.py --test
 - Check firewall settings
 - Review service health monitoring
 
-## 📝 License
+## Licensing
 
-MIT License - feel free to use, modify, and distribute.
+This software is available under a dual licensing model:
 
-## 🤝 Contributing
+- **Academic, research, and personal use** - Free under the included license
+- **Commercial use** - Requires paid licensing agreement
 
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
+The dual licensing approach ensures continued development whilst keeping the system accessible for learning, research, and personal flight simulation.
 
-## 📞 Support
+For commercial licensing enquiries: c42meitheal@gmail.com
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/simviator-microservices/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/simviator-microservices/discussions)
-- **Email**: [your.email@domain.com](mailto:your.email@domain.com)
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+- Adding new aviation characters and personalities
+- Extending flight simulator integration
+- Adding bot platform support
+- Improving documentation and examples
+
+All contributors retain rights to their contributions whilst granting permission for inclusion in both free and commercial versions.
+
+## Contact and Support
+
+- **Issues and Bug Reports**: [GitHub Issues](https://github.com/c42meitheal-collab/simviator-microservices/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/c42meitheal-collab/simviator-microservices/discussions)  
+- **Commercial Licensing**: c42meitheal@gmail.com
+- **General Questions**: c42meitheal@gmail.com
 
 ---
 
