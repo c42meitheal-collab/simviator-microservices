@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  simviator:
+    build: .
+    ports:
+      - "8001:8001"
+    environment:
+      - SERVICE_NAME=simviator
+      - SERVICE_PORT=8001
+    command: ["python", "-m", "services.simviator.main"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  bot-control:
+    build: .
+    ports:
+      - "8002:8002"
+    environment:
+      - SERVICE_NAME=bot_control
+      - SERVICE_PORT=8002
+    command: ["python", "-m", "services.bot_control.main"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  orchestrator:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SERVICE_NAME=orchestrator
+      - SERVICE_PORT=8000
+      - SIMVIATOR_URL=http://simviator:8001
+      - BOT_CONTROL_URL=http://bot-control:8002
+    command: ["python", "-m", "services.orchestrator.main"]
+    depends_on:
+      - simviator
+      - bot-control
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+networks:
+  default:
+    name: simviator-network

@@ -1,0 +1,29 @@
+# Simviator Microservices Dependencies
+# Minimal dependencies for core functionality
+
+# Core async HTTP for service health checks and communication
+aiohttp>=3.8.0
+
+# Optional dependencies for enhanced functionality
+# Uncomment as needed:
+
+# For Discord bot integration
+# discord.py>=2.0.0
+
+# For Twitch bot integration  
+# twitchio>=2.5.0
+
+# For MSFS integration
+# SimConnect>=0.4.0
+
+# For enhanced logging and monitoring
+# structlog>=22.0.0
+# prometheus-client>=0.15.0
+
+# For configuration management
+# pydantic>=1.10.0
+# python-dotenv>=0.19.0
+
+# For testing
+# pytest>=7.0.0
+# pytest-asyncio>=0.20.0

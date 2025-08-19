@@ -1,0 +1,28 @@
+{
+  "service_name": "orchestrator",
+  "service_port": 8000,
+  "services": [
+    {
+      "name": "simviator",
+      "url": "http://localhost:8001",
+      "health_endpoint": "/health",
+      "required": true,
+      "restart_attempts": 3,
+      "restart_delay": 5.0
+    },
+    {
+      "name": "bot_control",
+      "url": "http://localhost:8002", 
+      "health_endpoint": "/health",
+      "required": false,
+      "restart_attempts": 3,
+      "restart_delay": 5.0
+    }
+  ],
+  "health_check_interval": 10.0,
+  "health_timeout": 5.0,
+  "event_bus_enabled": false,
+  "event_bus_url": "redis://localhost:6379",
+  "log_level": "INFO",
+  "log_file": null
+}
